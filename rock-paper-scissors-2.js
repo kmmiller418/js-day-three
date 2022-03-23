@@ -8,11 +8,17 @@ function getHand(array) {
 function playRound(player1, player2) {
     player1.hand = getHand(hands);
     player2.hand = getHand(hands);
+
+    console.log(player1.name + " played " + player1.hand + ", " + player2.name + " played " + player2.hand)
+    
     if (player1.hand == player2.hand) {
+        console.log("It's a tie.")
         return null;
     } else if ((player1.hand == 'rock' && player2.hand == 'scissors') || (player1.hand=='scissors' && player2.hand == 'paper')|| (player1.hand=='paper' && player2.hand=='rock')) {
+        console.log(player1.name + " won.")
         return player1;
     } else if ((player2.hand == 'rock' && player1.hand == 'scissors') || (player2.hand=='scissors' && player1.hand == 'paper') || (player2.hand=='paper' && player1.hand=='rock')) {
+        console.log(player2.name + " won.")
         return player2;
     };
 };
@@ -24,13 +30,13 @@ function playGame(player1, player2, playUntil) {
 
     while (numWins1 < playUntil || numWins2 < playUntil ) {
         winner = playRound(player1, player2);
-        console.log(winner)
         if (winner == player1) {
             numWins1++;
         } else if (winner == player2) {
             numWins2++;
         };
     };
+    console.log(winner.name + " is the game's winner.")
     return winner;
 };
 
