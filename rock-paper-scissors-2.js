@@ -16,9 +16,9 @@ function playRound(player1, player2) {
     player1.name +
       " played " +
       player1.hand +
-      ", " +
+      "; " +
       player2.name +
-      " played " +
+      " played ." +
       player2.hand
   );
 
@@ -68,7 +68,7 @@ function playTournament(player1, player2, player3, player4, playUntil) {
   winner2 = playGame(player3, player4, playUntil);
   finalWinner = playGame(winner1, winner2, playUntil);
 
-  console.log(finalWinner.name + " is the world champion");
+  console.log(finalWinner.name + " is the world champion!");
 }
 
 let p1 = {
