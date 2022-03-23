@@ -50,18 +50,3 @@ function playGame(player1, player2, playUntil) {
 }
 
 console.log(playGame(player1, player2, 5));
-
-
-//CHALLENGE
-function playTournament(player1, player2, player3, player4, playUntil) {
-    let winner1;
-    let winner2;
-
-    let numWins1 = 0;
-    let numWins2 = 0;
-    let numWins3 = 0;
-    let numWins4 = 0;
-
-    winner1 = playGame(player1, player2, 3);
-    winner2 = playGame()
-}
