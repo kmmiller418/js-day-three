@@ -91,4 +91,4 @@ let p4 = {
   hand: getHand(hands),
 };
 
-console.log(playTournament(p1, p2, p3, p4, 3));
+playTournament(p1, p2, p3, p4, 3);
