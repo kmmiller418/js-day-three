@@ -52,27 +52,27 @@ function playTournament(player1, player2, player3, player4, playUntil) {
     winner2 = playGame(player3, player4, playUntil);
     finalWinner = playGame(winner1, winner2, playUntil);
 
-    console.log(finalWinner.name + " is the world champion")
+    console.log(finalWinner.name + " is the world champion");
 }
 
 let p1 = {
     name: 'Jack',
     hand: getHand(hands)
-}
+};
 
 let p2 = {
     name: 'Dianne',
     hand: getHand(hands)
-}
+};
 
 let p3 = {
     name: 'Jessie',
     hand: getHand(hands)
-}
+};
 
 let p4 = {
     name: "Jessie's Girl",
     hand: getHand(hands)
-}
+};
 
 console.log(playTournament(p1, p2, p3, p4, 3));
