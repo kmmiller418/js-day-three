@@ -1,3 +1,6 @@
+// second version
+// removed global variables and tried to clean up code-- changed playGame from recursive call to while loop for safety
+
 const hands =  ['rock', 'paper', 'scissors'];
 
 function getHand(array) {
