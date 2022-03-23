@@ -1,3 +1,8 @@
+///FIRST VERSION
+//CONTAINS GLOBAL VARIABLES
+//AND A LOT OF MESSINESS
+
+
 const hands = ['rock' , 'paper', 'scissors'];
 let winner = null;
 let numWins1 = 0;
