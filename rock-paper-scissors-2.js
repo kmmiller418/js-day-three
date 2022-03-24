@@ -47,7 +47,7 @@ function playGame(player1, player2, playUntil) {
   let numWins2 = 0;
   let winner;
 
-  while (numWins1 < playUntil || numWins2 < playUntil) {
+  while (numWins1 < playUntil && numWins2 < playUntil) {
     winner = playRound(player1, player2);
     if (winner == player1) {
       numWins1++;
