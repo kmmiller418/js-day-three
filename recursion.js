@@ -8,12 +8,6 @@ let exponent = (base, power) => {
     }
 }
 
-let exponentIterative = (base, power) => {
-    for (let i = 0; i < power; i++){
-        base * base;
-    }
-    return base
-}
 
 console.log(exponent(-2,5)); //-32
 console.log(exponent(-7,3)); //-343
